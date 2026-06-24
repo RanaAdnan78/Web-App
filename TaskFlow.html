@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Flow</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <span>✅</span>
+            <strong>TASK FLOW</strong>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="user">
+            <span>Welcome, Rana Adnan</span>
+            <button type="button">Logout</button>
+        </div>
+    </header>
+
+    <main>
+
+        <form>
+            <fieldset>
+                <legend>Task Details</legend>
+
+                <label for="task">Task Title:</label>
+                <input type="text" id="task" name="task" 
+                placeholder="Enter your task here">
+
+                <label for="priority">Priority:</label>
+                <select id="priority" name="priority">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+
+                <label for="due-date">Due Date:</label>
+                <input type="date" id="due-date" name="due-date">
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description"
+                placeholder="Task description likho..."></textarea>
+
+                <button type="submit">Add Task</button>
+            </fieldset>
+        </form>
+
+        <section class="stats">
+            <h2>Task Statistics</h2>
+            <ul>
+                <li>
+                    <h3>Total Tasks</h3>
+                    <p>12</p>
+                </li>
+                <li>
+                    <h3>Completed Tasks</h3>
+                    <p>8</p>
+                </li>
+                <li>
+                    <h3>Pending Tasks</h3>
+                    <p>4</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="task-list">
+            <h2>Task List</h2>
+
+            <article class="task-card">
+                <div class="card-left">
+                    <input type="checkbox" id="task1">
+                    <label for="task1">Complete the project</label>
+                    <h3>CS Works</h3>
+                    <p>This is First Task</p>
+                    <time datetime="2026-06-30">Due: 30 June 2026</time>
+                </div>
+                <div class="card-right">
+                    <span class="high">High Priority</span>
+                    <button type="button">Edit</button>
+                    <button type="button">Delete</button>
+                </div>
+            </article>
+
+            <article class="task-card">
+                <div class="card-left">
+                    <input type="checkbox" id="task2">
+                    <label for="task2">Prepare presentation</label>
+                    <h3>EE Works</h3>
+                    <p>This is Second Task</p>
+                    <time datetime="2026-06-30">Due: 30 June 2026</time>
+                </div>
+                <div class="card-right">
+                    <span class="medium">Medium Priority</span>
+                    <button type="button">Edit</button>
+                    <button type="button">Delete</button>
+                </div>
+            </article>
+
+            <article class="task-card">
+                <div class="card-left">
+                    <input type="checkbox" id="task3">
+                    <label for="task3">Review codebase</label>
+                    <h3>CE Works</h3>
+                    <p>This is Third Task</p>
+                    <time datetime="2026-06-30">Due: 30 June 2026</time>
+                </div>
+                <div class="card-right">
+                    <span class="low">Low Priority</span>
+                    <button type="button">Edit</button>
+                    <button type="button">Delete</button>
+                </div>
+            </article>
+
+            <article class="task-card">
+                <div class="card-left">
+                    <input type="checkbox" id="task4" checked>
+                    <label for="task4">User testing</label>
+                    <h3>IT Works</h3>
+                    <p>This is Fourth Task</p>
+                    <time datetime="2026-06-30">Due: 30 June 2026</time>
+                </div>
+                <div class="card-right">
+                    <span class="high">High Priority</span>
+                    <button type="button">Edit</button>
+                    <button type="button">Delete</button>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rana Adnan. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
