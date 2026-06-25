@@ -1,0 +1,142 @@
+/* ========== RESET ========== */
+* {
+    margin: 0;        /* sab ka default margin hatao */
+    padding: 0;       /* sab ka default padding hatao */
+    box-sizing: border-box; /* padding width mein count ho */
+}
+
+/* ========== BODY ========== */
+body {
+    font-family: Arial, sans-serif; /* poore page ka font */
+    background-color: #f0f2f5;      /* light gray background */
+    color: #333;                    /* default text color */
+}
+
+/* ========== HEADER ========== */
+header {
+    background-color: rgba(140, 4, 145, 0.774); /* purple */
+    padding: 15px 30px;       /* upar neeche 15, left right 30 */
+    display: flex;            /* items ek line mein */
+    justify-content: space-between; /* logo left, nav right */
+    align-items: center;      /* vertically center */
+}
+
+/* ========== LOGO ========== */
+header .logo {
+    display: flex;        /* emoji aur text ek line mein */
+    align-items: center;  /* vertically center */
+    gap: 10px;            /* emoji aur text ke beech space */
+}
+
+header .logo h1 {
+    color: white;       /* logo text white */
+    font-size: 22px;    /* size */
+}
+
+header .logo span {
+    font-size: 24px;    /* emoji size */
+}
+
+/* ========== NAV ========== */
+nav ul {
+    list-style: none;   /* bullets hatao */
+    display: flex;      /* links horizontal */
+    gap: 25px;          /* links ke beech space */
+}
+
+nav ul li a {
+    color: white;           /* link color white */
+    text-decoration: none;  /* underline hatao */
+    font-size: 15px;        /* font size */
+}
+
+nav ul li a:hover {
+    color: aqua;        /* mouse aaye toh aqua ho jaye */
+}
+
+/* ========== MAIN ========== */
+main {
+    padding: 20px 30px; /* upar neeche 40, left right 30 */
+}
+
+/* ========== SECTION — CARDS GRID ========== */
+section {
+    display: grid;                        /* grid layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 25px;                            /* cards ke beech space */
+}
+
+/* ========== PRODUCT CARD ========== */
+.product-card {
+    background-color: white;  /* card white */
+    border-radius: 12px;      /* rounded corners */
+    overflow: hidden;         /* image corners bhi round hon */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* halki shadow */
+    display: flex;            /* andar sab flex */
+    flex-direction: column;   /* upar se neeche */
+    align-items: center;      /* center mein */
+    padding-bottom: 20px;     /* neeche space */
+}
+
+/* ========== CARD IMAGE ========== */
+.product-card img {
+    width: 100%;
+    height: 300px;        /* ye number badlo apni marzi se */
+    object-fit: cover;
+    object-position: center; /* image ka center dikhao */
+}
+/* ========== CARD CONTENT ========== */
+.product-card h3 {
+    margin-top: 15px;   /* image se thoda neeche */
+    font-size: 18px;
+    color: #1a1a2e;     /* dark color */
+}
+
+.product-card p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #888;        /* gray description */
+    text-align: center;
+}
+
+/* ========== PRICE ========== */
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e94560;     /* red price */
+    margin-top: 10px;
+    display: block;
+}
+
+/* ========== RATING ========== */
+.rating {
+    margin-top: 8px;
+    font-size: 16px;
+    display: block;
+}
+
+/* ========== BUTTON ========== */
+.product-card button {
+    margin-top: 15px;
+    padding: 10px 24px;
+    background-color: rgba(140, 4, 145, 0.774); /* same purple */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;    /* mouse pointer ban jaye */
+}
+
+.product-card button:hover {
+    background-color: #e94560; /* hover pe red */
+}
+
+/* ========== FOOTER ========== */
+footer {
+    text-align: center;       /* center mein */
+    padding: 20px;
+    background-color: rgba(140, 4, 145, 0.774); /* purple */
+    color: white;
+    font-size: 13px;
+    margin-top: 5px;
+}
