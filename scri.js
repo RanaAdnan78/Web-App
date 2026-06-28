@@ -54,7 +54,7 @@ tasks.forEach(task => {
 // ===== FOR LOOP ON ARRAY =====
 for (let i = 0; i < tasks.length; i++) {
     let st = tasks[i].done ? "Done" : "Pending"
-    if (st =="Pending")
+    if (st === "Pending")
     {
     console.log(`Task: ${tasks[i].title} Is ${st}`)
 }
